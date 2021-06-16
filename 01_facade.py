@@ -8,9 +8,9 @@ from models import FacadePostMessage
 app = FastAPI()
 
 LOGGING_SERVICES = ('http://127.0.0.1:8081/micro_hazelcast',
-                                      'http://127.0.0.1:8001/micro_hazelcast',
-                                      'http://127.0.0.1:8002/micro_hazelcast',
-                                     )
+                    'http://127.0.0.1:8001/micro_hazelcast',
+                    'http://127.0.0.1:8002/micro_hazelcast')
+
 
 def get_logging():
     return random.choice(LOGGING_SERVICES)
